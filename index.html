@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>EmailTemplate-Hybrid</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style type="text/css">
+/* What it does: Hover styles for buttons */
+.button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+/* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+.fluid, .fluid-centered {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+/* And center justify these ones. */
+.fluid-centered {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+/* What it does: Forces table cells into full-width rows. */
+.stack-column, .stack-column-center {
+	display: block !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	direction: ltr !important;
+}
+/* And center justify these ones. */
+.stack-column-center {
+	text-align: center !important;
+}
+/* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+.center-on-narrow {
+	text-align: center !important;
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	float: none !important;
+}
+table.center-on-narrow {
+	display: inline-block !important;
+}
+}
+</style>
+</head>
+<body width="100%" bgcolor="#555555" style="margin: 0;" yahoo="yahoo">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#555555" style="border-collapse:collapse;">
+  <tr>
+    <td><center style="width: 100%;">
+        
+        <div style="max-width: 680px;"> 
+          <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+          
+          <!-- Email Header : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 20px 0; text-align: center">&nbsp;</td>
+            </tr>
+          </table>
+          <!-- Email Header : END --> 
+          
+          <!-- Email Body : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" width="100%" style="max-width: 680px;">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr>
+              <td class="full-width-image" align="center"><img src="https://derekustruck.github.io/IMG_0779.jpg" alt="alt_text" width="680"  style="width: 100%; max-width: 680px; height: auto;" border="0"></td>
+            </tr>
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px; text-align: left; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #000000;"><strong> Dear Friends and Family,</strong><br>
+                      <br>
+We’ve shared the good news with all of you already, but here it is again...we’re getting married! In the not-so-distant future (June 7th, 2019 to be exact), we are going to exchange vows on a rooftop downtown in a private ceremony officiated by one of our closest friends (Nathan Graham Smith) and witnessed by two others (Michael Graham and Francesca Arginelli). After the ceremony, we plan to have a quiet dinner with just the two of us. We have booked a hotel room in downtown Los Angeles to spend our first night as husband and wife without having to worry about who is making the bed in the morning.<br>
+<br>
+Despite the small nature of our ceremony, we do want to celebrate our commitment to each other with the people we love. Evelyn’s parents, Ismael and Cecilia Camargo, are hosting a party (some might call it a delayed reception) in San Diego on June 15th, 2019. We would love it if you would like to join us, and meet friends and family alike as we have some cocktails, food, dance, and possibly even some mariachi <br>
+<br>
+Of course, travel is expensive and Southern California is even pricier, so we completely understand if you can’t make it. We just want to make sure that you know that we consider you an integral part of the fabric of our combined lives, and we are thinking of you as we move forward in our life together. If you can make it, find the details down below!<br>
+<br>
+Following the reception, we plan on taking on honeymoon to Italy and Croatia and explore the Mediterranean. We love to travel together, and we are incredibly excited about this trip that will take us from the sunny land of California to the sunny land of the Adriatic. Rome, Florence, Venice, and Split are the destinations we have on the list so far over the course of 12 days...but we’re always hip to hear some recommendations on places to see and try. We are explorers at heart.<br>
+<br>
+If you can’t make it to California, don’t worry. We’re coming to see you! Alabama family, we are planning on coming to visit in October 2019 to give Evelyn a taste of Southern hospitality in Louisiana and Alabama. We even plan on making it up to the cold lands of the Midwest and over to Texas in the near future.<br>
+<br>
+The crowd demands answers to a few questions: we are registered at Crate &amp; Barrel (<a href="https://www.crateandbarrel.com/gift-registry/evelyn-camargo-and-derek-ustruck/r5927254">link<a/>), but we already have most of the things that we want or need. If you’d like to give us a present, we would love some help in making our honeymoon extra special.<br>
+<br>
+We love cards, too - so send us well-wishes to our home at - Evelyn Camargo and Derek Ustruck, 2404 Glover Pl, Los Angeles, CA 90031<br>
+<br>
+We really can’t tell you how happy we are to share this news with you, and we can’t wait to see you all.<br>
+<br>
+Much Love, Evelyn and Derek<br>                    </tr></table></td>
+            </tr>
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Background Image with Text : BEGIN -->
+            <tr>
+              <td bgcolor="#AAAAAA" valign="middle" style="text-align: center; background-position: center center !important; background-size: cover !important; background-image: url(http://derekustruck.github.io/creekside.png);"><!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px;height:175px; background-position: center center !important;">
+                        <v:fill type="tile" src="http://derekustruck.github.io/creekside.png" color="#222222" />
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+                
+                <div> 
+                  <!--[if mso]>
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" width="500">
+                            <tr>
+                            <td align="center" valign="top" width="500">
+                            <![endif]-->
+                  <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:500px; margin: auto;">
+                    <tr>
+                      <td valign="middle" style="text-align: center; padding: 40px 20px; font-family: sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 22px; color: #000000;"><strong> Please join us to celebrate at a party hosted by Ismael and Cecilia Camargo<br>
+                          <em>WHEN</em><em>:</em> 5pm-10pm, June 15th, 2019<em><br>
+                          </em><em>WHERE:&nbsp;</em><em></em><a href="https://goo.gl/maps/4KFySBWtn232">1331 South Creekside Drive, Chula Vista, CA 91915</a><em><br>
+DRESS: </em>Casual</strong><br></td>
+                    </tr>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]--> 
+                </div>
+                
+                <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]--></td>
+            </tr>
+            <!-- Background Image with Text : END --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            <tr>
+              <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%"><!--[if mso]>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+                
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:660px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 0;"><!--[if mso]>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="330">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; min-width:200px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 10px 10px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td><img src="http://derekustruck.github.io/lapaz.jpg" alt="" width="310" height="310" class="center-on-narrow" style="border: 0;width: 100%;max-width: 310px;max-height: 310px;"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"> Manuel Márquez de León International Airport </td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="330">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:50%; margin: 0 -2px; min-width:200px; vertical-align:top; width:100%;" class="stack-column">
+                        <table width="100%">
+                          <tr>
+                            <td style="padding: 10px 10px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+                                  <td><img src="http://derekustruck.github.io/love.jpg" alt="" width="310" height="310" class="center-on-narrow" style="border: 0;width: 100%;max-width: 310px;height: 310px;"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"> Home, sweet home in Frogtown, Los Angeles</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+                  </tr>
+                </table>
+                
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]--></td>
+            </tr>
+            <!-- Two Even Columns : END --> 
+            
+            <!-- Three Even Columns : BEGIN -->
+            <tr> </tr>
+            <!-- Three Even Columns : END --> 
+            
+            <!-- Thumbnail Left, Text Right : BEGIN -->
+            <tr> </tr>
+            <!-- Thumbnail Left, Text Right : END --> 
+            
+            <!-- Thumbnail Right, Text Left : BEGIN -->
+            <tr>
+              <td dir="rtl" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding: 10px 0;"><!--[if mso]>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+                
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:660px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 0;"><!--[if mso]>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; margin: 0 -2px; max-width:33.33%; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td dir="ltr" style="padding: 0 10px 10px 10px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+                      
+                      <div style="display:inline-block; margin: 0 -2px; max-width:66.66%; min-width:320px; vertical-align:top;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr> </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+                  </tr>
+                </table>
+                
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]--></td>
+            </tr>
+            <!-- Thumbnail Right, Text Left : END -->
+            
+          </table>
+          <!-- Email Body : END --> 
+          
+          <!-- Email Footer : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;"><br>
+                <br>
+                Evelynandderek.com<br>
+                <br></td>
+            </tr>
+          </table>
+          <!-- Email Footer : END --> 
+          
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+        </div>
+      </center></td>
+  </tr>
+</table>
+</body>
+</html>
